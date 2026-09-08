@@ -22,5 +22,14 @@ while True:
         print("Goodbye!")
         break
 
+    
+   elif choice == "4":
+        task = input("Enter task to delete: ")
+
+        if task in tasks:
+             tasks.remove(task)
+             print("Task deleted!")
+        else:
+             print("Task not found.")
     else:
-        print("Invalid option.")
+         print("Nothing")
